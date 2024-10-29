@@ -1,68 +1,48 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useContext, useState } from "react";
+ 
+ 
+ 
+ 
+import { Fundo } from "../../style";
+import {CartContent} from "./styles"
+import pizza from "../../assets/pizza.png"
+import { useDispatch, useSelector } from "react-redux";
+import { RootReducer } from "../../store";
+import { close } from "../../store/reducers/cart";
 
-import pizza from "../../../assets/pizza.png";
-import lixeira from "../../../assets/lixeira.png";
-import { CartContext } from "../../Provider/CartProvider";
-import { CarrinhoProduto } from "./Produto_Carrinho";
-
-interface IProductCart {
-  id: number;
-  imagem: string;
-  nome: string;
-  preco: number;
-  lixeira: string;
-}
-interface ICartShopping {
-  product: IProductCart;
-}
-
-const produtos: IProductCart[] = [
-  {
-    id: 1,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    preco: 60.9,
-    lixeira: lixeira,
-  },
-  {
-    id: 2,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    preco: 60.9,
-    lixeira: lixeira,
-  },
-  {
-    id: 3,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    preco: 60.9,
-    lixeira: lixeira,
-  },
-  {
-    id: 4,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    preco: 60.9,
-    lixeira: lixeira,
-  },
-];
 
 export const Carrinho = () => {
-  const [shoppingCart, setShoppingCart] = useState<ICartShopping[]>([]);
-  const{addtoCart,carrinho,cart,openModalCart,removefromCart,setCart,setOpenModalCart}=useContext(CartContext)
+ const {isOpen }=useSelector((state:RootReducer)=>state.cart)
 
+ const dispatch=useDispatch()
+
+ const closeCart=()=>{
+  dispatch(close())
+ }
 
   return (
     <>
-      <ul>
-        {carrinho.map(produtoCarrinho=>{
-         return <CarrinhoProduto key={produtoCarrinho.id} product={produtoCarrinho}/>
-})}
+    <CartContent className={isOpen? 'is-open': '' }>
+      <Fundo onClick={closeCart}/>
+      <aside>
+        <ul>
+        <li className="cardCarrinho">
+          <img className="cardCarrinhoImagem" src={pizza} alt="pizza" />
+          <div className="nomePreco">
+          <h4 className="nome">Nome</h4>
+          <span className="preco">Preço</span>
+          </div>
+          <div className="divLixeira">
+          <img  className="lixeira" src="https://placehold.co/16x16" alt="lixeira" />
+          </div>
+        </li>
       </ul>
-      <p>
-        Valor total:<span>{}</span>
-      </p>
+      <div className="valorTotal">
+      <p className="valor">Valor Total</p>
+      <span className="valor">R$ 182,70</span>
+      </div>
+      <button className="continuar" type="button">Continuar com a entrega</button>
+      </aside>
+    </CartContent>
     </>
   );
 };

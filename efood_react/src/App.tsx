@@ -1,7 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { GlobalStyle } from "./style"
 import { Home } from "./pages/Home"
 import { Perfil } from "./pages/Perfil"
+import { Carrinho } from "./components/Carrinho"
+import { Provider } from "react-redux"
+import { store } from "./store"
 
 export const Rotas=()=>(
   <Routes>
@@ -13,10 +17,13 @@ export const Rotas=()=>(
 function App() {
 
   return (
+    <Provider store={store}>
     <BrowserRouter>
     <GlobalStyle/>
     <Rotas/>
+    <Carrinho/>
     </BrowserRouter>
+    </Provider>
   )
 }
 

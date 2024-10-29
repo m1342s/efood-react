@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -15,3 +15,13 @@ export const Cores={
     salmaoClaro:'#FFEBD9',
     branca: '#FFF'
 }
+
+export const Fundo=styled.div`
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:#000000;
+opacity:0.80;
+`

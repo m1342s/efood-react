@@ -3,9 +3,8 @@ import sushi from "../../assets/sushi.png"
 import estrela from "../../assets/estrela.png"
 import massa from "../../assets/massa.png"
 import { Imagem, ProdutoListaHomeStyles } from "./styles"
-import { useContext, useState } from "react"
+import { useState } from "react"
 import { Modal } from "../Modal/ModalWrapper"
-import { CartContext } from "../../Provider/CartProvider"
 
 
 
