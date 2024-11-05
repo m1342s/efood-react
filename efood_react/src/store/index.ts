@@ -5,9 +5,8 @@ import cartReducer from "./reducers/cart"
 
 export const store =configureStore({
     reducer:{
-        cart: cartReducer,
-
-    },
+        cart: cartReducer
+    }
 })
 
-export type RootReducer =ReturnType<typeof store.getState>
+export type RootReducer=ReturnType<typeof store.getState>

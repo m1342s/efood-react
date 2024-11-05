@@ -10,6 +10,34 @@ border: 1px solid ${Cores.salmao}
 opacity: 0px;
 gap:5px;
 
+.Tags{
+display:flex;
+}
+
+.destaque{
+width: 121px;
+height: 26px;
+background-color:${Cores.salmao};
+font-size: 12px;
+font-weight: 700;
+line-height: 14.06px;
+text-align: center;
+color:${Cores.salmaoClaro};
+padding: 6px 4px;
+}
+.tagJaponesa{
+width: 61px;
+height: 26px;
+background-color:${Cores.salmao};
+font-size: 12px;
+font-weight: 700;
+line-height: 14.06px;
+text-align: center;
+color:${Cores.salmaoClaro};
+padding: 6px 4px;
+margin-left:5px;
+}
+
 h4,p,.nota{
   color:${Cores.salmao}
 }
@@ -48,16 +76,24 @@ export const Imagem=styled.div`
 width: 472px;
 height: 217px;
 display:flex;
+justify-content: flex-end;
+padding:16px 16px;
+
 
 .tagItaliana{
 width: 61px;
 height: 26px;
 background-color: ${Cores.salmao};
 color:${Cores.salmaoClaro};
+padding-left:4px;
+padding-top:4px;
+padding-bottom:6px;
+padding-right:10px;
+text-align:center;
 }
 
 .divTag{
-display:flex;
+display:block;
 
 }
 `

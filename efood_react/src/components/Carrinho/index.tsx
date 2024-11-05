@@ -10,6 +10,7 @@ import { RootReducer } from "../../store";
 import { close } from "../../store/reducers/cart";
 
 
+
 export const Carrinho = () => {
  const {isOpen }=useSelector((state:RootReducer)=>state.cart)
 

@@ -13,7 +13,7 @@ list-style:none;
 export const Cores={
     salmao: '#E66767',
     salmaoClaro:'#FFEBD9',
-    branca: '#FFF'
+    branca: '#FFFFFF'
 }
 
 export const Fundo=styled.div`
@@ -22,6 +22,6 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background-color:#000000;
+background-color:#000;
 opacity:0.80;
 `
