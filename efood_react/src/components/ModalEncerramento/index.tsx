@@ -1,4 +1,5 @@
-import { BarraLateral, Concluir, ContainerEncerramento, Fundo } from "./styles";
+import { Link } from "react-router-dom";
+import { BarraLateral, ContainerEncerramento, Fundo } from "./styles";
 
 export const ModalEncerramento = () => (
   <>
@@ -25,7 +26,9 @@ export const ModalEncerramento = () => (
             gastronômica. Bom apetite!
           </p>
         </div>
-        <Concluir to="/" >Concluir</Concluir >
+        <Link to="/">
+        <button type="button">Concluir</button>
+        </Link>
       </BarraLateral>
     </ContainerEncerramento>
   </>

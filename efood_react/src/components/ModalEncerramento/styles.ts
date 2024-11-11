@@ -1,7 +1,6 @@
  
 import styled from "styled-components";
 import { Cores } from "../../style";
-import { Link } from "react-router-dom";
 
 export const Fundo=styled.div`
 position:absolute;
@@ -50,8 +49,7 @@ p{
 margin-bottom:8px;
 }
 }
-`
-export const Concluir=styled(Link)`
+button{
 width: 344px;
 height: 24px;
 font-size: 14px;
@@ -60,4 +58,5 @@ line-height: 16.41px;
 text-align: center;
 color:${Cores.salmao};
 border:none;
+}
 `
