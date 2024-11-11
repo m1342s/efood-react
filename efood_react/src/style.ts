@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -13,7 +13,8 @@ list-style:none;
 export const Cores={
     salmao: '#E66767',
     salmaoClaro:'#FFEBD9',
-    branca: '#FFFFFF'
+    branca: '#FFFFFF',
+    cinza: ' #4B4B4B'
 }
 
 export const Fundo=styled.div`

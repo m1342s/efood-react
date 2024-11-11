@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import fundoHome from "../../assets/fundo.png"
 import { HeaderPerfilStyles } from "./styles"
 import logo from "../../assets/logo.png"

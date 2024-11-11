@@ -1,11 +1,11 @@
-/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+ 
+ 
 import { ProdutoListaPerfilStyles } from "./styles";
-import pizza from "../../assets/pizza.png";
 
 import { useDispatch } from "react-redux";
 
-import { addToCart } from "../../store/reducers/cart";
+import { addToCart, open } from "../../store/reducers/cart";
 import { Produto } from "../../models/Produto";
 
 
@@ -20,28 +20,29 @@ export type ProductList = {
   imagem: string;
   nome: string;
   descricao: string;
+  preco:number;
 };
 
 
 
 
-export const ProdutoListaPerfil = (
-  { imagem, descricao, nome }: Produto,
-   {produto} : Props
+export const ProdutoListaPerfil = ({produto} : Props
 ) => {
-
   const dispatch = useDispatch();
+ const { imagem, descricao, nome }: Produto=produto
+ 
 
   const add = () => {
     dispatch(addToCart(produto));
+    dispatch(open())
   };
 
   return (
     <>
       <ProdutoListaPerfilStyles>
-        <img src={imagem} alt="pizza" />
-        <h4>{nome}</h4>
-        <p>{descricao}</p>
+        <img src={produto.imagem} alt="pizza" />
+        <h4>{produto.nome}</h4>
+        <p>{produto.descricao}</p>
         <button onClick={add} type="button">
           Adicionar ao carrinho
         </button>

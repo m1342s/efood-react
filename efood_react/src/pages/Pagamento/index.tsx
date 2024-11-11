@@ -1,11 +1,11 @@
-import { BannerPerfil } from "../../components/Banner_Perfil";
 import { HeaderPerfil } from "../../components/Header_Perfil";
 import { ListaPerfil } from "../../components/Lista_Perfil";
+import { ModalPagamento } from "../../components/ModalPagamento";
 
-export const Perfil=()=>(
+export const Pagamento=()=>(
     <>
     <HeaderPerfil/>
-    <BannerPerfil/>
-    <ListaPerfil />
+    <ListaPerfil/>
+    <ModalPagamento/>
     </>
 )

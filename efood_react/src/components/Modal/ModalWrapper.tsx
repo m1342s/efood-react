@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import pizza from "../../assets/pizza.png";
 import { ModalStyles } from "./styles";
 import fechar from "../../assets/fechar.png";

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import sushi from "../../assets/sushi.png"
 import estrela from "../../assets/estrela.png"
 import massa from "../../assets/massa.png"

@@ -1,11 +1,11 @@
-import { BannerPerfil } from "../../components/Banner_Perfil";
 import { HeaderPerfil } from "../../components/Header_Perfil";
 import { ListaPerfil } from "../../components/Lista_Perfil";
+import { ModalEncerramento } from "../../components/ModalEncerramento";
 
-export const Perfil=()=>(
+export const Encerramento=()=>(
     <>
     <HeaderPerfil/>
-    <BannerPerfil/>
-    <ListaPerfil />
+    <ListaPerfil/>
+    <ModalEncerramento/>
     </>
-)
+    )
