@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { ProdutoListaPerfil } from "../Produto_Lista_Perfil";
 import { ListaPerfilStyles } from "./styles";
 import pizza from "../../assets/pizza.png";
@@ -10,9 +10,7 @@ type ProductList={
     descricao:string
     preco:number
 }
-type Product={
-    product:ProductList[]
-}
+
 
 const produtosLista:ProductList[] = [
   {

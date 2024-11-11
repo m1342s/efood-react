@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
  
  
 import { ProdutoListaPerfilStyles } from "./styles";
@@ -6,7 +6,6 @@ import { ProdutoListaPerfilStyles } from "./styles";
 import { useDispatch } from "react-redux";
 
 import { addToCart, open } from "../../store/reducers/cart";
-import { Produto } from "../../models/Produto";
 
 
 type Props = {
@@ -29,7 +28,6 @@ export type ProductList = {
 export const ProdutoListaPerfil = ({produto} : Props
 ) => {
   const dispatch = useDispatch();
- const { imagem, descricao, nome }: Produto=produto
  
 
   const add = () => {

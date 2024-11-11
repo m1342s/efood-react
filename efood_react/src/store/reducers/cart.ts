@@ -1,38 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import pizza from "../../assets/pizza.png";
 import { ProductList } from "../../components/Produto_Lista_Perfil";
 
-const produtosLista: ProductList[] = [
-  {
-    id: 1,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    descricao: "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    preco: 69.90
-  },
-  {
-    id: 2,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    descricao: "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    preco: 69.90
-  },
-  {
-    id: 3,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    descricao: "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    preco: 69.90
-  },
-  {
-    id: 4,
-    imagem: pizza,
-    nome: "Pizza Margherita",
-    descricao: "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    preco: 69.90
-  },
-];
+
 
 type CartState = {
   items: ProductList[];
