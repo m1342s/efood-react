@@ -9,7 +9,9 @@ import { close,removefromCart } from "../../store/reducers/cart";
 import { formataPreco } from "../../utils/format";
 import { Link } from "react-router-dom";
 
-
+export type Props={
+  valorTotal: () => number
+}
 
 
 export const Carrinho = () => {

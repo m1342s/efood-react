@@ -11,6 +11,8 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
   if (!isOpen) return null;
   return (
     <>
+    <div>
+      <div></div>
       <ModalStyles>
         <div className="imgNomeFechar">
           <img className="imgModal" src={pizza} alt="pizza" />
@@ -36,6 +38,7 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
           <img src={fechar} className="fechar" onClick={onClose} />
         </div>
       </ModalStyles>
+      </div>
     </>
   );
 };

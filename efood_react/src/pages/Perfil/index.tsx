@@ -1,3 +1,4 @@
+ 
 import { BannerPerfil } from "../../components/Banner_Perfil";
 import { Carrinho } from "../../components/Carrinho";
 import { HeaderPerfil } from "../../components/Header_Perfil";

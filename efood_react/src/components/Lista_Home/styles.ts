@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
+export const Container=styled.div`
+max-width:1024px;
+margin:0 auto;
+`
 export const ListaHomeStyles=styled.ul`
-display:grid;
-grid-template-columns:repeat(2,48%);
-margin-left:180px;
+width: 100%;
+height: 1290px;
+display:flex;
 margin-top:30px;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap:80px;
 `

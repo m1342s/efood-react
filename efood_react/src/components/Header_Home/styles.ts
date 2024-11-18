@@ -30,6 +30,6 @@ font-size: 36px;
 font-weight: 900;
 line-height: 42.19px;
 text-align: center;
-color:${Cores.salmao}
+color:${Cores.salmao};
 }
 `

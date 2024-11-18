@@ -27,8 +27,8 @@ export const ProdutosListaHome=()=>{
       <div className="info">
       <h4>Hioki Sushi</h4>
       <div className="avaliacao">
-        <p className="nota">4.9</p>
-        <img src={estrela} />
+        <p className="nota" id="notaJaponesa">4.9</p>
+        <img className='estrela' src={estrela} />
       </div>
       </div>
       <p>
@@ -49,7 +49,7 @@ export const ProdutosListaHome=()=>{
       <h4>La Dolce Vita Trattoria</h4>
       <div className="avaliacao">
         <span className="nota">4.6</span>
-        <img src={estrela} />
+        <img className='estrela' src={estrela} />
       </div>
       </div>
       <p>
@@ -70,7 +70,7 @@ export const ProdutosListaHome=()=>{
       <h4>La Dolce Vita Trattoria</h4>
       <div className="avaliacao">
         <span className="nota">4.6</span>
-        <img src={estrela} />
+        <img className='estrela' src={estrela} />
       </div>
       </div>
       <p>
@@ -91,7 +91,7 @@ export const ProdutosListaHome=()=>{
       <h4>La Dolce Vita Trattoria</h4>
       <div className="avaliacao">
         <span className="nota">4.6</span>
-        <img src={estrela} />
+        <img className='estrela' src={estrela} />
       </div>
       </div>
       <p>
@@ -112,7 +112,7 @@ export const ProdutosListaHome=()=>{
       <h4>La Dolce Vita Trattoria</h4>
       <div className="avaliacao">
         <span className="nota">4.6</span>
-        <img src={estrela}/>
+        <img className='estrela' src={estrela}/>
       </div>
       </div>
       <p>
@@ -133,7 +133,7 @@ export const ProdutosListaHome=()=>{
       <h4>La Dolce Vita Trattoria</h4>
       <div className="avaliacao">
         <span className="nota">4.6</span>
-        <img src={estrela}/>
+        <img className='estrela' src={estrela}/>
       </div>
       </div>
       <p>

@@ -26,7 +26,6 @@ function App() {
     <BrowserRouter>
     <GlobalStyle/>
     <Rotas/>
-    
     </BrowserRouter>
     </Provider>
   )
