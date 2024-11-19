@@ -7,7 +7,6 @@ export const ProdutoListaHomeStyles = styled.li`
   width: 472px;
   height: 398px;
   border: 1px solid ${Cores.salmao};
-  
 
   .Tags {
     display: flex;
@@ -36,6 +35,8 @@ export const ProdutoListaHomeStyles = styled.li`
     padding: 6px 4px;
     margin-left: 5px;
   }
+  .textoJaponesa {
+  }
 
   .estrela {
     margin-left: 8px;
@@ -50,7 +51,8 @@ export const ProdutoListaHomeStyles = styled.li`
     justify-content: space-between;
     align-items: center;
     margin-top: 8px;
-    margin-bottom:16px;
+    margin-bottom: 16px;
+    margin-left: 7px;
   }
 
   h4,
@@ -61,13 +63,15 @@ export const ProdutoListaHomeStyles = styled.li`
     text-align: left;
   }
 
-  h4 {
-    margin-left: 7px;
-  }
-
   p {
+    // margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 8px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
   }
 
   .avaliacao {
