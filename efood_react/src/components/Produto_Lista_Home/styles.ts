@@ -64,7 +64,6 @@ export const ProdutoListaHomeStyles = styled.li`
   }
 
   p {
-    // margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 8px;
     font-family: Roboto;
@@ -77,7 +76,7 @@ export const ProdutoListaHomeStyles = styled.li`
   .avaliacao {
     margin-right: 8px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   button {
