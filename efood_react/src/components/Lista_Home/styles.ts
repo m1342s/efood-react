@@ -6,12 +6,11 @@ margin:0 auto;
 `
 export const ListaHomeStyles=styled.ul`
 width: 100%;
-height: 1290px;
 display:flex;
 margin-top:30px;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-gap:80px;
+gap:20px;
 margin-bottom:120px;
 `

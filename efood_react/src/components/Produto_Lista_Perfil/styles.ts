@@ -3,29 +3,31 @@ import { Cores } from "../../style";
 
 export const ProdutoListaPerfilStyles = styled.li`
   width: 320px;
-  height: 338px;
+  height: 430px;
   background-color: ${Cores.salmao};
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  gap:10px;
-  padding-left:8px;
-
-  
-
+  margin-bottom: 32px;
+  padding: 8px 8px 0px 8px;
+  img {
+    width: 304px;
+    height: 167px;
+    margin-bottom: 8px;
+  }
   h4 {
-    color: ${Cores.salmaoClaro};
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 900;
     line-height: 18.75px;
+    color: ${Cores.salmaoClaro};
+    margin-bottom: 8px;
     text-align: left;
   }
   p {
-    color: ${Cores.salmaoClaro};
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
+    color: ${Cores.salmaoClaro};
+    margin-bottom:8px;
   }
   button {
     width: 304px;
@@ -35,11 +37,7 @@ export const ProdutoListaPerfilStyles = styled.li`
     font-weight: 700;
     line-height: 16.41px;
     text-align: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     color:${Cores.salmao};
-    background-color: ${Cores.salmaoClaro}
     border:none;
   }
 `;

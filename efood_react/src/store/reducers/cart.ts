@@ -1,11 +1,10 @@
  
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ProductList } from "../../components/Produto_Lista_Perfil";
-
+import { ListaRestauranteProduto } from "../../components/Lista_Home";
 
 
 type CartState = {
-  items: ProductList[];
+  items: ListaRestauranteProduto[];
   isOpen: boolean;
 };
 
@@ -18,7 +17,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<ProductList>) => {
+    addToCart: (state, action: PayloadAction<ListaRestauranteProduto>) => {
       const productExistance = state.items.find(
         (produto) => produto.id === action.payload.id
       );

@@ -9,24 +9,44 @@ import { addToCart, open } from "../../store/reducers/cart";
 
 
 type Props = {
-  produto: ProductList;
+  produto: ListaRestauranteProduto;
 };
 
+type ProductData={
+  id:number
+  imagem:string
+  descricao:string
+  nome:string
+}
 
 
-export type ProductList = {
+
+export type ListaRestauranteProduto = {
   id: number;
-  imagem: string;
-  nome: string;
-  descricao: string;
-  preco:number;
+  titulo: string;
+  destacado: string;
+  tipo: string;
+  avaliacao: number;
+  descricao: string
+  capa: string;
+  cardapio: [
+    {
+      foto: string;
+      preco: number;
+      id: number;
+      nome: string;
+      descricao: string;
+      porcao: string;
+      
+    }
+  ];
 };
 
 
 
 
-export const ProdutoListaPerfil = ({produto} : Props
-) => {
+export const ProdutoListaPerfil = ({id,imagem,descricao,nome} : ProductData
+,{produto}:Props) => {
   const dispatch = useDispatch();
  
 
@@ -38,9 +58,9 @@ export const ProdutoListaPerfil = ({produto} : Props
   return (
     <>
       <ProdutoListaPerfilStyles>
-        <img src={produto.imagem} alt="pizza" />
-        <h4>{produto.nome}</h4>
-        <p>{produto.descricao}</p>
+        <img src={imagem}/>
+        <h4>{nome}</h4>
+        <p>{descricao}</p>
         <button onClick={add} type="button">
           Adicionar ao carrinho
         </button>

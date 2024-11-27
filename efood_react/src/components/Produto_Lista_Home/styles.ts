@@ -7,122 +7,91 @@ export const ProdutoListaHomeStyles = styled.li`
   width: 472px;
   height: 398px;
   border: 1px solid ${Cores.salmao};
-
-  .Tags {
-    display: flex;
-  }
-
-  .destaque {
-    width: 121px;
-    height: 26px;
-    background-color: ${Cores.salmao};
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14.06px;
-    text-align: center;
-    color: ${Cores.salmaoClaro};
-    padding: 6px 4px;
-  }
-  .tagJaponesa {
-    width: 61px;
-    height: 26px;
-    background-color: ${Cores.salmao};
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14.06px;
-    text-align: center;
-    color: ${Cores.salmaoClaro};
-    padding: 6px 4px;
-    margin-left: 5px;
-  }
-  .textoJaponesa {
-  }
-
   .estrela {
+    width: 21px;
+    height: 20px;
     margin-left: 8px;
   }
-  h4,
-  p,
-  .nota {
-    color: ${Cores.salmao};
-  }
-  .info {
+  .nomeAvaliacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    margin-left: 7px;
+    margin: 8px 8px 16px;
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.09px;
+      text-align: left;
+      color: ${Cores.salmao};
+    }
+    .avaliacao {
+      display: flex;
+      span {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        text-align: center;
+        color: ${Cores.salmao};
+      }
+    }
   }
-
-  h4,
-  .nota {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.09px;
-    text-align: left;
-  }
-
-  p {
-    margin-bottom: 16px;
-    margin-left: 8px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-  }
-
-  .avaliacao {
-    margin-right: 8px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  button {
-    background-color: ${Cores.salmao};
-    color: #fff;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: ${Cores.salmao};
+      margin-bottom:16px;
+      margin-left:8px;
+    }
+    button{
+    width: 82px;
+    height: 24px;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.41px;
     text-align: center;
-    width: 82px;
-    height: 24px;
-    border: none;
-    margin-left: 8px;
-    margin-bottom: 8px;
-  }
+    color:${Cores.salmaoClaro};
+    background:${Cores.salmao};
+    margin-left:8px;
+    margin-bottom:8px;
+    border:none;
+    padding-top: 4px;
+    padding-right:6px;
+    padding-bottom:6px;
+    padding-left:4px;
+    }
 `;
 export const Imagem = styled.div`
-  width: 472px;
+  width: 100%;
   height: 217px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px 16px;
-
-  .tagItaliana {
-    width: 61px;
-    height: 26px;
-    background-color: ${Cores.salmao};
-    color: ${Cores.salmaoClaro};
-    padding-left: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 11px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14.06px;
-
-  .divTag {
-    display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .tag {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 16px 0 0;
+    span {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14.06px;
+      text-align: center;
+      color: ${Cores.salmaoClaro};
+      background: ${Cores.salmao};
+      width: 61px;
+      height: 26px;
+      padding: 6px 11px 6px 5px;
+    }
   }
 `;
-export const Modal = styled.div`
+
+export const Modal=styled.div`
+justify-content:center;
+align-items:center;
 position:fixed;
-display:none;
-align-items: center;
 top:0;
 left:0;
+display:none;
 width:100%;
 height:100%;
 
@@ -132,40 +101,34 @@ display:flex;
 }
 
 .overlay{
-position:absolute;
 top:0;
 left:0;
+position:absolute;
 width:100%;
 height:100%;
 background-color:rgba(0,0,0,0.8);
-
 }
 `
 export const ModalContent=styled.div`
-width:960px;
+display:flex;
 position:relative;
-display:flex;
-margin:0 auto;
-justify-content:center;
-
 z-index:1;
-.container{
-max-width:960px;
-}
-background: ${Cores.salmao};
-display:flex;
+background-color:${Cores.salmao};
+max-width: 960px;
+height: 344px;
 padding-top:32px;
-padding-left:32px;
 
+.content{
+display:flex;
+flex-direction:column;
+margin-left:24px;
+}
 .imgProduto{
 width: 280px;
 height: 280px;
-margin-bottom:32px;
-}
-.nomeTextoBotao{
 margin-left:32px;
+}
 h4{
-font-family: Roboto;
 font-size: 18px;
 font-weight: 900;
 line-height: 21.09px;
@@ -181,21 +144,21 @@ text-align: left;
 color:white;
 margin-bottom:16px;
 }
+
+.fechar{
+width: 16px;
+height: 16px;
+margin-right:8px;
+}
 button{
-font-family: Roboto;
+width: 218px;
+height: 24px;
 font-size: 14px;
 font-weight: 700;
 line-height: 16.41px;
 text-align: center;
 color:${Cores.salmao};
-width: 218px;
-height: 24px;
-}
-}
-.fechar{
-width: 16px;
-height: 16px;
-margin-right:8px;
-
+border:none;
+padding:4px 7px 4px 7px;
 }
 `
