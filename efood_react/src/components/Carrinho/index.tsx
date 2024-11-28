@@ -40,9 +40,13 @@ export const Carrinho = ({produtos}:Props) => {
             {produtos.map((obj) => 
             obj.cardapio.map(item=><li className="cardCarrinho" key={item.id}>
               <img className="imgProduto" src={item.foto} alt={item.nome} />
+              <div className="nomePreco">
               <h4>{item.nome}</h4>
-              <span>R${item.preco}0</span>
-              <img src={lixeira} alt="Ícone de lixeira" />
+              <span className="preco">R${item.preco}0</span>
+              </div>
+              <div className="divLixeira">
+              <img className="lixeira" src={lixeira} alt="Ícone de lixeira" />
+              </div>
             </li>)
             )}
           </ul>

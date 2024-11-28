@@ -19,8 +19,7 @@ const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action: PayloadAction<ListaRestauranteProduto>) => {
       const productExistance = state.items.find(
-        (produto) => produto.id === action.payload.id
-      );
+        (produto) => produto.id === action.payload.cardapio.forEach((item)=>item.id));
       if (!productExistance) {
         state.items.push(action.payload);
       } else {
